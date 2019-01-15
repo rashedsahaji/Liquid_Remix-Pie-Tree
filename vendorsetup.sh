@@ -1,1 +1,1 @@
-add_lunch_combo syberia_whyred-userdebug
+add_lunch_combo liquid_whyred-userdebug

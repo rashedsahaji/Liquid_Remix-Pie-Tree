@@ -24,9 +24,9 @@ $(call inherit-product-if-exists, vendor/MiuiCamera/config.mk)
 $(call inherit-product, device/xiaomi/whyred/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/syberia/common.mk)
+$(call inherit-product, vendor/liquid/config/common_full_phone.mk)
 
-PRODUCT_NAME := syberia_whyred
+PRODUCT_NAME := liquid_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
@@ -42,3 +42,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := xiaomi/whyred/whyred:8.1.0/OPM1.171019.011/V9.5.11.0.OEIMIFA:user/release-keys
 
 TARGET_VENDOR := Xiaomi
+#ONLY FOR OFFICIAL LIQUID TAG
+LIQUID_BUILDTYPE := RELEASE
