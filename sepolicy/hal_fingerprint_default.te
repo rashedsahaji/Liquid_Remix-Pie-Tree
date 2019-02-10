@@ -37,4 +37,5 @@ allow hal_fingerprint_default mnt_user_file:dir r_dir_perms;
 allow hal_fingerprint_default mnt_user_file:file r_file_perms;
 allow hal_fingerprint_default mnt_user_file:lnk_file r_file_perms;
 
+allow hal_fingerprint_default sdcardfs:dir { search };
 set_prop(hal_fingerprint_default, fingerprint_prop)
