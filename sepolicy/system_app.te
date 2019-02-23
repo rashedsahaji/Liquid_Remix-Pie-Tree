@@ -1,2 +1,4 @@
 allow system_app wificond:binder call;
 add_service(system_app, goodix_fingerprint_service)
+allow system_app sysfs_battery_supply:file rw_file_perms;
+allow system_app sysfs_battery_supply:dir search;
